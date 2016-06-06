@@ -11,14 +11,46 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:copy-file-name.copyFileName",
+        "onCommand:copy-file-name.copyFileNameWithExtension",
+        "onCommand:copy-file-name.copyFullPath"
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+      "keybindings": [
+        {
+          "command": "copy-file-name.copyFileName",
+          "key": "ctrl+alt+f",
+          "mac": "cmd+alt+f",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "copy-file-name.copyFileNameWithExtension",
+          "key": "ctrl+alt+e",
+          "mac": "cmd+alt+e",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "copy-file-name.copyFullPath",
+          "key": "ctrl+alt+p",
+          "mac": "cmd+alt+p",
+          "when": "editorTextFocus"
+        }
+      ],
+      "commands": [
+        {
+          "command": "copy-file-name.copyFileName",
+          "title": "Copy file name to clipboard"
+        },
+        {
+          "command": "copy-file-name.copyFileNameWithExtension",
+          "title": "Copy file name with extensions to clipboard"
+        },
+        {
+          "command": "copy-file-name.copyFullPath",
+          "title": "Copy full path to clipboard"
+        }
+      ]
     },
     "scripts": {
         "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
