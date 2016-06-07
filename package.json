@@ -12,8 +12,7 @@
     ],
     "activationEvents": [
         "onCommand:copy-file-name.copyFileName",
-        "onCommand:copy-file-name.copyFileNameWithExtension",
-        "onCommand:copy-file-name.copyFullPath"
+        "onCommand:copy-file-name.copyFileNameWithExtension"
     ],
     "main": "./out/src/extension",
     "contributes": {
@@ -29,12 +28,6 @@
           "key": "ctrl+alt+e",
           "mac": "cmd+alt+e",
           "when": "editorTextFocus"
-        },
-        {
-          "command": "copy-file-name.copyFullPath",
-          "key": "ctrl+alt+p",
-          "mac": "cmd+alt+p",
-          "when": "editorTextFocus"
         }
       ],
       "commands": [
@@ -45,10 +38,6 @@
         {
           "command": "copy-file-name.copyFileNameWithExtension",
           "title": "Copy File Name: with extensions"
-        },
-        {
-          "command": "copy-file-name.copyFullPath",
-          "title": "Copy File Name: full path"
         }
       ]
     },

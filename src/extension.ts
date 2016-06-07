@@ -29,15 +29,6 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     context.subscriptions.push(disposable);
-    
-    disposable = vscode.commands.registerCommand('copy-file-name.copyFullPath', () => {
-
-        var fullPath = vscode.window.activeTextEditor.document.fileName;
-        var fileName = fullPath;
-        pasteAndShowMessage(fileName);
-    });
-
-    context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
