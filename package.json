@@ -1,7 +1,7 @@
 {
     "name": "copy-file-name",
     "displayName": "Copy file name",
-    "description": "Copy the name of the currently opened file to the clipboard.",
+    "description": "Copies the name of the currently opened file to the clipboard.",
     "version": "1.0.0",
     "publisher": "nemesv",
     "engines": {
@@ -10,6 +10,14 @@
     "categories": [
         "Other"
     ],
+    "homepage": "https://github.com/nemesv/vscode-copy-file-name/blob/master/README.md",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/nemesv/vscode-copy-file-name.git"
+    },
+    "bugs": {
+      "url": "https://github.com/nemesv/vscode-copy-file-name/issues"
+    },
     "activationEvents": [
         "onCommand:copy-file-name.copyFileName",
         "onCommand:copy-file-name.copyFileNameWithExtension"
