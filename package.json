@@ -1,8 +1,8 @@
 {
     "name": "copy-file-name",
-    "displayName": "copy-file-name",
+    "displayName": "Copy file name",
     "description": "Copy the name of the currently opened file to the clipboard.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "nemesv",
     "engines": {
         "vscode": "^1.0.0"
@@ -40,15 +40,15 @@
       "commands": [
         {
           "command": "copy-file-name.copyFileName",
-          "title": "Copy file name to clipboard"
+          "title": "Copy File Name"
         },
         {
           "command": "copy-file-name.copyFileNameWithExtension",
-          "title": "Copy file name with extensions to clipboard"
+          "title": "Copy File Name: with extensions"
         },
         {
           "command": "copy-file-name.copyFullPath",
-          "title": "Copy full path to clipboard"
+          "title": "Copy File Name: full path"
         }
       ]
     },
