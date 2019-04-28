@@ -4,8 +4,8 @@ Copies the name of the currently active file to the clipboard.
 
 ## Features
 
-* `Ctrl-Alt-f` / `Cmd-Alt-f` - copies the name of currently active file **without extenstion**
-* `Ctrl-Alt-e` / `Cmd-Alt-e` - copies the name of currently active file **with extenstion**
+* `Ctrl-Alt-f` / `Cmd-Alt-f` - copies the name of currently active file **without extension**
+* `Ctrl-Alt-e` / `Cmd-Alt-e` - copies the name of currently active file **with extension**
 
 ![Commands](images/copy-file-name-commands.png)
 
@@ -20,6 +20,10 @@ The extension uses the [node-copy-paste](https://www.npmjs.com/package/copy-past
 - 
 
 ## Release Notes
+
+### 1.1.0
+
+* The Copy commands are included in the editor title and Explorer context menus 
 
 ### 1.0.0
 
