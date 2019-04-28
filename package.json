@@ -47,7 +47,29 @@
         "command": "copy-file-name.copyFileNameWithExtension",
         "title": "Copy File Name: with extensions"
       }
-    ]
+    ],
+    "menus": {
+      "editor/title/context": [
+        {
+          "command": "copy-file-name.copyFileName",
+          "group": "1_cutcopypaste@10"
+        },
+        {
+          "command": "copy-file-name.copyFileNameWithExtension",
+          "group": "1_cutcopypaste@11"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "copy-file-name.copyFileName",
+          "group": "6_copypath@100"
+        },
+        {
+          "command": "copy-file-name.copyFileNameWithExtension",
+          "group": "6_copypath@110"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
