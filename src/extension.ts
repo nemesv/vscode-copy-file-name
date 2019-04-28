@@ -1,7 +1,6 @@
 'use strict';
 // The module 'vscode' contains the VS Code extensibility API
 import * as vscode from 'vscode';
-import * as copyPaste from 'copy-paste';
 import * as path from 'path';
 
 let getPath = function(args) {
@@ -15,7 +14,7 @@ let getPath = function(args) {
 }
 
 let pasteAndShowMessage = function(fileName: string) {
-    copyPaste.copy(fileName);
+    vscode.env.clipboard.writeText(fileName);
     vscode.window.setStatusBarMessage(`The filename "${fileName}" was copied to the clipboard.`, 3000);
 }
 

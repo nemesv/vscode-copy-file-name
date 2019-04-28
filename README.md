@@ -11,15 +11,17 @@ Copies the name of the currently active file to the clipboard.
 
 ## Dependencies
 
-The extension uses the [node-copy-paste](https://www.npmjs.com/package/copy-paste) module which provides the clipboard access by wrapping `pbcopy/pbpaste` (for OSX), `xclip` (for Linux and OpenBSD), and `clip` (for Windows).
-
-`xclip` has to be [manually installed](https://www.cyberciti.biz/faq/xclip-linux-insert-files-command-output-intoclipboard/) on Linux distributions which are not bundling it (e.g. Linux Mint 19). 
+-
 
 ## Known Issues
 
 - 
 
 ## Release Notes
+
+### 1.2.0
+
+* Remove the dependency on `node-copy-paste` and use the built in Clipboard support in VS Code 1.30.x and above.
 
 ### 1.1.0
 
