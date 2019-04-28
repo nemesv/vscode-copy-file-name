@@ -9,6 +9,16 @@ Copies the name of the currently active file to the clipboard.
 
 ![Commands](images/copy-file-name-commands.png)
 
+The commands are available from the following context menus:
+
+- Editor Title
+
+    ![Commands](images/editor-title-context-menu.png)
+
+- Explorer
+
+    ![Commands](images/explorer-context-menu.png)
+
 ## Dependencies
 
 -
